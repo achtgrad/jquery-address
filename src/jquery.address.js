@@ -179,6 +179,7 @@
                     if (_msie && _version < 8) {
                         var frameset = _d.getElementsByTagName('frameset')[0];
                         _frame = _d.createElement((frameset ? '' : 'i') + 'frame');
+                        _frame.src = "javascript:false;";
                         if (frameset) {
                             frameset.insertAdjacentElement('beforeEnd', _frame);
                             frameset[frameset.cols ? 'cols' : 'rows'] += ',0';
